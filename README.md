@@ -1,6 +1,6 @@
 # Trained Models and datasets
 Trained models and the datasets used can be found here: https://1drv.ms/u/s!AsshhlQM3x93qw6Bn44LfmTBreFz?e=Mdnpx2
-Simply extract the files into the project directory
+Simply extract the folders into the project directory
 
 # Requirements
 Python 3.9.5
