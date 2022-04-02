@@ -271,13 +271,13 @@ class TwitterWrapper:
 
     def add_user_to_store(self, user):
         series = pd.Series(user, name=user['id'])
-        self.user_store = self.user_store.append(series)
+        self.user_store = pd.concat([self.user_store, series])
         if self.user_store.shape[0] % 10 == 0:
             self.save_user_store()
     
     def add_to_tweet_store(self,tweet):
         series = pd.Series(tweet, name=tweet['id'])
-        self.tweet_store = self.tweet_store.append(series)
+        self.tweet_store = pd.concat([self.tweet_store, series])
         if self.tweet_store.shape[0] % 1000 == 0:
             self.save_tweet_store()
     
