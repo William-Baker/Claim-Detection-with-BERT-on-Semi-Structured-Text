@@ -44,9 +44,9 @@ BERT_MODEL = "bert-base-uncased" # bert-base-uncased bert-large-uncased, bert-ba
 
 # Specify the path to the pre-trained Masked LM model
 if MODE=='Twitter':
-    MASKED_LM_PATH = "Trained Models/Twitter/Masked LM/2022-04-01 06:10:01.498390 step: 88655"
+    MASKED_LM_PATH = "Trained Models/Twitter/Masked LM/2022-04-01 step 88655"
 else:
-    MASKED_LM_PATH = "Trained Models/UKP/Masked LM/2022-04-01 00:39:32.682074 step: 25220"
+    MASKED_LM_PATH = "Trained Models/UKP/Masked LM/2022-04-01 step 25220"
 
 
 

@@ -1,9 +1,5 @@
 
 #%%
-!python -m pip install TwitterAPI
-!python -m pip install pandas
-
-#%%
 
 
 

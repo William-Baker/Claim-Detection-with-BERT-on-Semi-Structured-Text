@@ -43,11 +43,11 @@ BERT_MODEL = "bert-base-uncased" # bert-base-uncased bert-large-uncased, bert-ba
 if MODE=='UKP Default': 
     pre_trained_model_path = None
 elif MODE=='UKP Pretrained':
-    pre_trained_model_path = 'Trained Models/UKP/NSP/2022-03-12 16:38:17.119496 step: 20850'
+    pre_trained_model_path = 'Trained Models/UKP/NSP/2022-04-01 step 6950'
 elif MODE=='Twitter Default':
     pre_trained_model_path = None
 elif MODE=='Twitter Pretrained':
-    pre_trained_model_path = 'Trained Models/Twitter/NSP/2022-04-01 18:58:41.246851 step: 46515'
+    pre_trained_model_path = 'Trained Models/Twitter/NSP/2022-04-02 step 46515'
 
 
 
