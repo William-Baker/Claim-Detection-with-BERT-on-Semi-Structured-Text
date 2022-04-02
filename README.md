@@ -11,6 +11,12 @@ executing `setup.sh` - creates a python virtual environment and installs necessa
 - after doing this you can run all code from the command line (this is NOT RECOMMENDED)
 - Instead follow the steps bellow to setup VENV with VSCode then run the scripts in python interactive mode
 
+if a GPU is present it must have at least 8GB of memory, otherwise in each of the Claim Detection files change
+`device = torch.device("cuda" if torch.cuda.is_available() else "cpu")`
+to
+`device = "cpu"`
+Using the CPU will increase the memory requirement from 2GB to 10GB
+
 ## VENV
 Be sure change the interpreter to the python executable in the venv folder before running iPython snippets
 1. Open VS Code
