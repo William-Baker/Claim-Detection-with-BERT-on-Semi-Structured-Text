@@ -10,8 +10,7 @@ tw = TwitterWrapper()
 
 
 
-#%% ================== Import Plaintext Dataset =============================================================
-
+# Import Plaintext Dataset
 df = pd.read_table('dataset.txt')
 
 df['tweet_id'] = df['tweet_id'].astype(str)
