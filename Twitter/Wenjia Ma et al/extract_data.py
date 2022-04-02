@@ -1,6 +1,8 @@
 
 #%%
 
+import sys
+sys.path.insert(0, '../') # add to the parent directory to the path, so we can import the package
 
 from TwitterAPIWrapper import TwitterWrapper
 import pandas as pd
@@ -16,7 +18,10 @@ df = pd.read_table('dataset.txt')
 df['tweet_id'] = df['tweet_id'].astype(str)
 
 for id in df['tweet_id'].tolist():
-    tw.get_tweet(id)
+    try:
+        tw.get_tweet(id)
+    except KeyError:
+        pass
 
 
 df.set_index('tweet_id', inplace=True)
