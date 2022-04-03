@@ -125,7 +125,7 @@ class TwitterWrapper:
         if not 'Conversation Complete' in self.tweet_store.columns:
             self.tweet_store['Conversation Complete'] = False
         self.tweet_store['Conversation Complete'] = self.tweet_store.apply(lambda e: True if e['conversation_id'] == conversation_id else e['Conversation Complete'], axis=1)
-        #self.tweet_store.to_pickle(self.store_dir + 'tweets.pkl')
+    
 
     def conversation_id_done(self, conversation_id):
         this_conversaton = self.tweet_store[self.tweet_store['conversation_id'] == conversation_id]
@@ -157,14 +157,6 @@ class TwitterWrapper:
                 time.sleep(15 * 60)
                 
         
-        
-        # for tweet in pager.get_iterator(wait=2):
-        #     # tweet = tweet.json()['data'] # TODO why dont we need this!?
-        #     self.add_to_tweet_store(copy(tweet))
-        
-        # self.mark_conversation_id_complete(conversation_id) # we're done now, so mark accordingly
-        
-
     
     def search(self, search_term: str, count: int, tweet_fields=TweetFields.all_public):
         """
