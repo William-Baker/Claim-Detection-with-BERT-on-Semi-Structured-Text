@@ -10,6 +10,7 @@ VS Code - with the Jupyter extension installed (Using version v2021.8.1046824664
 executing `setup.sh` - creates a python virtual environment and installs necessary packages to it
 - after doing this you can run all code from the command line (this is NOT RECOMMENDED)
 - Instead follow the steps bellow to setup VENV with VSCode then run the scripts in python interactive mode
+- to install on windows or mac, simply skip the first 3 lines in the setup.sh script and install the python packages without a virtual environment.
 
 if a GPU is present it must have at least 8GB of memory, otherwise in each of the Claim Detection files change
 `device = torch.device("cuda" if torch.cuda.is_available() else "cpu")`
