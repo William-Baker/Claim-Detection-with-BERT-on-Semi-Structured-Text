@@ -53,9 +53,9 @@ The loss and evaluation metrics have also been logged for each training task, to
 
 ## Reconfigure Mode
 
-There are various different modes for each of the 3 ML files (\verb|Masked LM|, \verb|NSP| and \verb|Claim Detection|), each are described in the code and corresponds to a task referenced in our implementation.
+There are various different modes for each of the 3 ML files (`Masked LM`, `NSP` and `Claim Detection`), each are described in the code and corresponds to a task referenced in our implementation.
 All can be changed by substituting the appropriate string from the list of supported modes. 
 
 ## Changing pre-trained model path
 
-If a new model is trained, the path to the model in the following step must be updated. For instance, if a new Masked LM model is trained for Twitter, the Twitter NSP task must be updated to load the appropriate model path. This can be done by simply changing the \verb|MASKED_LM_PATH| to the new model's path.
+If a new model is trained, the path to the model in the following step must be updated. For instance, if a new Masked LM model is trained for Twitter, the Twitter NSP task must be updated to load the appropriate model path. This can be done by simply changing the `MASKED_LM_PATH` to the new model's path.
